@@ -1,0 +1,138 @@
+html,
+body {
+  font-size: 137.5%;
+  -webkit-font-smoothing: antialiased;
+  color: #7d7c7c;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: justify;
+}
+u {
+  text-decoration-color: deepskyblue;
+  text-decoration-style: wavy;
+}
+a {
+  color: #6d75bf;
+}
+p {
+  line-height: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  opacity: 1;
+  font-size: 0.8rem;
+  transition: opacity 0.3s ease-in-out;
+}
+h1 {
+  font-size: 4.242rem;
+  line-height: 4.5rem;
+  margin-top: 3rem;
+  color: #ffffff;
+}
+/* header */
+.main-nav {
+  background-color: #ffc001;
+  min-height: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.main-nav ul {
+  margin: 0 30px;
+  margin-top: 0;
+  display: flex;
+  float: none;
+}
+.main-nav ul li {
+  margin: 0 15px;
+  list-style-type: none;
+}
+.navigation li a {
+  color: #6d75bf;
+  font-weight: 700;
+  font-size: 17px;
+  border-radius: 0;
+  padding: 5px;
+  display: block;
+  white-space: nowrap;
+  line-height: 25px;
+}
+.navigation li.current > a {
+  color: #5fb0b7;
+  border-color: #5fb0b7;
+}
+.navigation li.current > a:hover {
+  color: #6d75bf;
+}
+
+.navigation > li > a:hover {
+  color: #5fb0b7;
+}
+
+/* Body main*/
+
+section {
+  min-height: 755px;
+}
+
+/* intro */
+.basic-intro {
+  position: relative;
+  background: #ffc001;
+}
+article {
+  font-size: 1.7rem;
+  line-height: 4.5rem;
+  margin-top: 3rem;
+}
+article a {
+  text-decoration: none;
+}
+
+article i {
+  color: #fff;
+  cursor: pointer;
+}
+article a:hover i {
+  color: #6d75bf;
+}
+.basic-intro:before {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 225px;
+  background: url(wave.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main {
+  width: 24rem;
+  margin: 0 auto;
+}
+
+.intro {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+.faq-heading {
+  color: #000;
+}
+
+/* 
+ Media Queries
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 320px) and (max-width: 767px) {
+  main {
+    width: 13rem;
+  }
+}
