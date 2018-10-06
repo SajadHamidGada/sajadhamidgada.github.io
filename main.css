@@ -16,7 +16,7 @@ a {
 }
 p {
   line-height: 1.5rem;
-  margin-top: 1.5rem;
+  margin-top: 1.4rem;
   margin-bottom: 0;
   opacity: 1;
   font-size: 0.8rem;
@@ -52,7 +52,7 @@ h1 {
   list-style-type: none;
 }
 .navigation li a {
-  color: #6d75bf;
+  color: #fff;
   font-weight: 700;
   font-size: 17px;
   border-radius: 0;
@@ -60,17 +60,11 @@ h1 {
   display: block;
   white-space: nowrap;
   line-height: 25px;
+  text-decoration: none;
 }
-.navigation li.current > a {
-  color: #5fb0b7;
-  border-color: #5fb0b7;
-}
-.navigation li.current > a:hover {
+.navigation li a:hover {
+  border-bottom: 1px solid #5fb0b7;
   color: #6d75bf;
-}
-
-.navigation > li > a:hover {
-  color: #5fb0b7;
 }
 
 /* Body main*/
@@ -85,9 +79,9 @@ section {
   background: #ffc001;
 }
 article {
-  font-size: 1.7rem;
+  font-size: 1rem;
   line-height: 4.5rem;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 article a {
   text-decoration: none;
@@ -118,7 +112,7 @@ main {
 }
 
 .intro {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #ffffff;
 }
 .faq-heading {
@@ -134,5 +128,16 @@ main {
 @media (min-width: 320px) and (max-width: 767px) {
   main {
     width: 13rem;
+  }
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) {
+  .basic-intro:before {
+    height: 330px;
   }
 }
