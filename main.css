@@ -1,11 +1,11 @@
 html,
 body {
   font-size: 137.5%;
-  -webkit-font-smoothing: antialiased;
   color: #7d7c7c;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
     Ubuntu, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-align: justify;
 }
 u {
   text-decoration-color: deepskyblue;
@@ -18,9 +18,8 @@ p {
   line-height: 1.5rem;
   margin-top: 1.4rem;
   margin-bottom: 0;
-  opacity: 1;
   font-size: 0.8rem;
-  transition: opacity 0.3s ease-in-out;
+  text-align: justify;
 }
 h1 {
   font-size: 4.242rem;
@@ -70,7 +69,7 @@ h1 {
 /* Body main*/
 
 section {
-  min-height: 755px;
+  min-height: 810px;
 }
 
 /* intro */
@@ -136,8 +135,11 @@ main {
   ##Screen = B/w 1025px to 1280px
 */
 
-@media (min-width: 1025px) {
+@media (min-width: 1360px) {
   .basic-intro:before {
-    height: 330px;
+    height: 345px;
+  }
+  article {
+    margin-top: -1rem;
   }
 }
